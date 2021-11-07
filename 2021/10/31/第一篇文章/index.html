@@ -4,6 +4,25 @@
   <meta charset="utf-8">
   
   
+  <meta name="description" content="C语言动态内存管理笔记bilibili课程直通车：C语言 Here!!
+使用库
+1&amp;lt;stdlib.h&amp;gt;
+
+使用的函数
+
+malloc
+free
+
+
+calloc
+
+realloc
+
+
+malloc函数1void *malloc(size_t size); 
+
+​        作用：ma" />
+  
 
   
   
@@ -11,14 +30,19 @@
   
   
   
-  <title>Hexo</title>
+  <title>第一篇文章（C语言内存内存管理） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="C语言动态内存管理笔记bilibili课程直通车：C语言 Here!! 使用库 1&lt;stdlib.h&gt;  使用的函数  malloc free   calloc  realloc   malloc函数1void *malloc(size_t size);   ​        作用：malloc函数向系统申请分配size的字节的内存空间，并返回指向这片空间的指针，调用成功则会返回指针类">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一篇文章（C语言内存内存管理）">
+<meta property="og:url" content="http://example.com/2021/10/31/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="C语言动态内存管理笔记bilibili课程直通车：C语言 Here!! 使用库 1&lt;stdlib.h&gt;  使用的函数  malloc free   calloc  realloc   malloc函数1void *malloc(size_t size);   ​        作用：malloc函数向系统申请分配size的字节的内存空间，并返回指向这片空间的指针，调用成功则会返回指针类">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-10-31T13:58:51.000Z">
+<meta property="article:modified_time" content="2021-11-07T05:13:37.956Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="编程语言C">
 <meta name="twitter:card" content="summary">
   
   
@@ -62,17 +86,15 @@
 </header>
 
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
-  
-    <article id="post-第一篇文章" class="post-第一篇文章 post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-第一篇文章" class="post-第一篇文章 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
         
         
   
-    <h1 class="entry-title">
-      <a class="article-title" href="/2021/10/31/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">第一篇文章（C语言内存内存管理）</a>
+    <h1 class="entry-title article-title">
+      第一篇文章（C语言内存内存管理）
     </h1>
   
 
@@ -178,67 +200,20 @@
 </article>
 
 
-
-
-
-
-  
-    <article id="post-hello-world" class="post-hello-world post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2021/10/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://example.com/2021/10/23/hello-world/" data-id="ckvos94cz0001j4wf5nuf02fj" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2021/10/23/hello-world/">
-    <time datetime="2021-10-23T07:09:16.278Z" class="entry-date">
-        2021-10-23
-    </time>
-</a>
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
     
     
-    </footer>
-</article>
+        <span class="nav-next"><a href="/2021/10/23/hello-world/" rel="next">Hello World <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
 
 
 
 
 
 
-  
-  
 
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
