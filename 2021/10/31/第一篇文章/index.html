@@ -35,8 +35,8 @@ var CONFIG = {
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Hexo</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">第一篇文章（C语言内存内存管理）</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-10-31</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-11-07</span></span></div></header><div class="post-body">
         <h1 id="C语言动态内存管理笔记"   >
-          <a href="#C语言动态内存管理笔记" class="heading-link"><i class="undefined"></i></a><a href="#C语言动态内存管理笔记" class="headerlink" title="C语言动态内存管理笔记"></a>C语言动态内存管理笔记</h1>
-      <p>bilibili课程直通车：C语言 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17s411N78s?p=37">Here!!</a></p>
+          <a href="#C语言动态内存管理笔记" class="heading-link"><i class="fas fa-link"></i></a><a href="#C语言动态内存管理笔记" class="headerlink" title="C语言动态内存管理笔记"></a>C语言动态内存管理笔记</h1>
+      <p>bilibili课程直通车：C语言 <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17s411N78s?p=37" >Here!!</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
 <p><strong>使用库</strong></p>
 <figure class="highlight c"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;stdlib.h&gt;</span><br></pre></td></tr></table></div></figure>
 
@@ -49,7 +49,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 
         <h2 id="malloc函数"   >
-          <a href="#malloc函数" class="heading-link"><i class="undefined"></i></a><a href="#malloc函数" class="headerlink" title="malloc函数"></a>malloc函数</h2>
+          <a href="#malloc函数" class="heading-link"><i class="fas fa-link"></i></a><a href="#malloc函数" class="headerlink" title="malloc函数"></a>malloc函数</h2>
       <figure class="highlight c"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> *<span class="title">malloc</span><span class="params">(<span class="keyword">size_t</span> size)</span></span>; </span><br></pre></td></tr></table></div></figure>
 
 <p>​        <strong>作用：</strong>malloc函数向系统申请分配size的字节的内存空间，并返回指向这片空间的指针，调用成功则会返回指针类型为void的指针，失败则会返回NULL。</p>
@@ -59,7 +59,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <p>使用malloc可以动态管理内存（只要更改malloc里面的参数即可）</p>
 
         <h2 id="free函数"   >
-          <a href="#free函数" class="heading-link"><i class="undefined"></i></a><a href="#free函数" class="headerlink" title="free函数"></a>free函数</h2>
+          <a href="#free函数" class="heading-link"><i class="fas fa-link"></i></a><a href="#free函数" class="headerlink" title="free函数"></a>free函数</h2>
       <figure class="highlight c"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">free</span><span class="params">(<span class="keyword">void</span> *udv)</span></span>;</span><br></pre></td></tr></table></div></figure>
 
 <p><strong>例题同上malloc例题</strong></p>
@@ -72,7 +72,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ol>
 
         <h2 id="内存泄漏"   >
-          <a href="#内存泄漏" class="heading-link"><i class="undefined"></i></a><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2>
+          <a href="#内存泄漏" class="heading-link"><i class="fas fa-link"></i></a><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2>
       <ul>
 <li><p>隐式内存泄漏：不合理的大量申请内存空间</p>
 </li>
@@ -85,7 +85,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 
         <h2 id="calloc函数"   >
-          <a href="#calloc函数" class="heading-link"><i class="undefined"></i></a><a href="#calloc函数" class="headerlink" title="calloc函数"></a>calloc函数</h2>
+          <a href="#calloc函数" class="heading-link"><i class="fas fa-link"></i></a><a href="#calloc函数" class="headerlink" title="calloc函数"></a>calloc函数</h2>
       <p>初始化内存空间</p>
 <figure class="highlight c"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> *<span class="title">calloc</span><span class="params">(<span class="keyword">size_t</span> number,<span class="keyword">size_t</span> size)</span></span>;</span><br><span class="line"><span class="comment">//————————————————————————————————————————————————————————————————————————————————</span></span><br><span class="line"><span class="keyword">int</span> *udv=(<span class="keyword">int</span> *)<span class="built_in">calloc</span>(<span class="number">8</span>,<span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br></pre></td></tr></table></div></figure>
 
@@ -94,7 +94,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 
 
         <h2 id="realloc函数"   >
-          <a href="#realloc函数" class="heading-link"><i class="undefined"></i></a><a href="#realloc函数" class="headerlink" title="realloc函数"></a>realloc函数</h2>
+          <a href="#realloc函数" class="heading-link"><i class="fas fa-link"></i></a><a href="#realloc函数" class="headerlink" title="realloc函数"></a>realloc函数</h2>
       <p>修改udv指向的内存空间大小</p>
 <figure class="highlight c"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> *<span class="title">realloc</span><span class="params">(<span class="keyword">void</span> *udv,<span class="keyword">size_t</span> size)</span></span>;<span class="comment">//size为字节</span></span><br></pre></td></tr></table></div></figure>
 
@@ -108,7 +108,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <p>也可以使用上述代码来扩展内存空间</p>
 
         <h2 id="扩展知识"   >
-          <a href="#扩展知识" class="heading-link"><i class="undefined"></i></a><a href="#扩展知识" class="headerlink" title="扩展知识"></a>扩展知识</h2>
+          <a href="#扩展知识" class="heading-link"><i class="fas fa-link"></i></a><a href="#扩展知识" class="headerlink" title="扩展知识"></a>扩展知识</h2>
       <figure class="highlight c"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br></pre></td></tr></table></div></figure>
 
 <ul>
